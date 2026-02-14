@@ -1,0 +1,9 @@
+lr=0.05
+ndim=64, 32, 10
+tanh
+acc=0.71
+
+lr=0.01
+ndim=64, 32, 10
+tanh
+acc=0.73
