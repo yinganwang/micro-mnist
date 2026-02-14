@@ -12,4 +12,4 @@ This project trains a fully connected MLP to classify MNIST digits using scalar 
 
 ## Results
 
-73% test accuracy on 8×8 downsampled MNIST using pure Python.
+74% test accuracy on 8×8 downsampled MNIST using pure Python.
