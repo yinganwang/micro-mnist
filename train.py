@@ -1,7 +1,6 @@
 from datasets import load_dataset
 from nn import MLP
 from micrograd import Value
-import math
 import numpy as np
 from tqdm import tqdm
 from PIL import Image
@@ -77,4 +76,4 @@ for im, label in zip(test_imgs, test_labels):
     if pred_label == label:
         total_correct += 1
 
-print("Accuracy:", total_correct / len(test_labels))
+print("Test accuracy:", total_correct / len(test_labels))
