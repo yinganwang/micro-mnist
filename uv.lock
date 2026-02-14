@@ -448,7 +448,7 @@ wheels = [
 ]
 
 [[package]]
-name = "micro-clip"
+name = "micro-mnist"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

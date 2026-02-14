@@ -32,18 +32,17 @@ ds = load_dataset("ylecun/mnist")
 train_data = ds["train"]
 test_data = ds["test"]
 
-train_imgs = [flatten_im(train_data[i]["image"]) for i in range(100)]
-train_labels = [train_data[i]["label"] for i in range(100)]
+train_imgs = [flatten_im(train_data[i]["image"]) for i in range(200)]
+train_labels = [train_data[i]["label"] for i in range(200)]
 test_imgs = [flatten_im(test_data[i]["image"]) for i in range(100)]
 test_labels = [test_data[i]["label"] for i in range(100)]
 
 im = train_imgs[0]
-print(im.shape[0])
 nin_dim = im.shape[0]
 
-mlp = MLP(nin_dim, [32, 10], activation_type='relu')
+mlp = MLP(nin_dim, [32, 10], activation_type='tanh')
 num_epochs = 100
-lr = 0.05
+lr = 0.01
 
 for epoch in tqdm(range(num_epochs)):
     total_loss = 0
